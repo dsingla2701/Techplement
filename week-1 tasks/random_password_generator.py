@@ -40,7 +40,7 @@ def main():
             use_digits=args.digits,
             use_special=args.special
         )
-        print(f'Generated password: {password}')
+        print(f'Generated random password is: {password}')
     except ValueError as e:
         print(f'Error: {e}')
 
