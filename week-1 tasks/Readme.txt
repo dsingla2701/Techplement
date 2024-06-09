@@ -3,6 +3,11 @@ Hi this is the code for the random password generator. This is a command-line to
 This password generator project has these features : 
 • Users can specify the length of the password to be generated. 
 • Users can specify the type of password to be generated (For ex. uppercase letters, lowercase letters, digits or special characters.
+• Users will get the strength of the password based on the types of the characters selected for the password.
+    ○ If there is a single character type selected then it will show as Very Weak password.
+    ○ If there are two character types selected then it will show as Weak password.
+    ○ If there are three character types selected then it will show as Strong password.
+    ○ If there are four character types selected then it will show as Very Strong password.
 
 Below are the Commands and Options which needs to be used to get your password generated : 
 • -l, --length (required): Specifies the length of the password. 
@@ -25,5 +30,5 @@ Ex 2: python random_password_generator.py -l 16 -u -s
 This command will generate a random password of length 16 including only uppercase and special characters.
 
 Error Handling :
-• The tool will raise an error if the password length is less than 1.
+• The tool will raise an error if the password length is less than 4.
 • The tool will raise an error if none of the character types (uppercase, lowercase, digits, special characters) are selected.
